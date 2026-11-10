@@ -3,975 +3,275 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7f6ef">
-<title>Korean Scalp Revival Bar</title>
-<meta name="description" content="Kenali Korean Scalp Revival Bar, shampoo bar praktis untuk rutinitas perawatan rambut.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Korean Scalp Revival Bar | Perawatan Rambut</title>
+<meta name="description" content="Kenali Korean Scalp Revival Bar, shampoo bar dengan inspirasi botanical Korea untuk rutinitas perawatan kulit kepala.">
 <link rel="preconnect" href="https://yoracare.com">
 <link rel="preconnect" href="https://cdn.orderonline.id">
 
 <style>
-:root {
-  --green:#344b38;
-  --green2:#53694b;
-  --sage:#e8ede3;
-  --cream:#f7f6ef;
-  --paper:#fffefa;
-  --ink:#252923;
-  --muted:#777d73;
-  --line:#e3e5dc;
-  --gold:#b99a5b;
+:root{
+  --green:#24543d;
+  --dark:#153b2b;
+  --sage:#e9efe8;
+  --cream:#f8f7f1;
+  --ink:#242922;
+  --muted:#747a72;
+  --line:#e4e6df;
+  --gold:#b79858;
   --max:1180px;
 }
-
-* {
-  box-sizing:border-box;
-}
-
-html {
-  scroll-behavior:smooth;
-  scroll-padding-top:80px;
-}
-
-body {
-  margin:0;
-  color:var(--ink);
-  background:var(--paper);
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  margin:0;background:#fff;color:var(--ink);
   font-family:Arial,Helvetica,sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-
-img {
-  display:block;
-  max-width:100%;
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-a {
-  color:inherit;
-}
-
-button,
-input {
-  font:inherit;
-}
-
-.container {
-  width:min(var(--max),calc(100% - 44px));
-  margin:auto;
-}
-
-.announcement {
-  padding:10px 15px;
-  text-align:center;
-  background:var(--green);
-  color:white;
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-.header {
-  height:72px;
-  padding:0 max(22px,calc((100% - var(--max))/2));
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  border-bottom:1px solid var(--line);
-  background:var(--paper);
-}
-
-.brand {
-  color:var(--green);
-  font:24px Georgia,serif;
-  text-decoration:none;
-  letter-spacing:1px;
-}
-
-.brand small {
-  display:block;
-  margin-top:4px;
-  text-align:center;
-  font:9px Arial,sans-serif;
-  letter-spacing:3px;
-}
-
-.nav {
-  display:flex;
-  gap:25px;
-}
-
-.nav a {
-  color:#62695e;
-  text-decoration:none;
-  font-size:12px;
-}
-
-.header-cta {
-  padding:12px 17px;
-  background:var(--green);
-  color:white;
-  text-decoration:none;
-  font-size:11px;
-  letter-spacing:1px;
-}
-
-main {
-  overflow:hidden;
-}
-
-.crumb {
-  padding:20px 0;
-  color:#92968d;
-  font-size:11px;
-}
-
-.product {
-  display:grid;
-  grid-template-columns:1.08fr .92fr;
-  align-items:start;
-  gap:65px;
-  padding:5px 0 75px;
-}
-
-.gallery {
-  min-width:0;
-}
-
-.main-photo {
-  width:100%;
-  background:#f1f0e9;
-}
-
-.main-photo img {
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-.thumbs {
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:10px;
-  margin-top:12px;
-}
-
-.thumb {
-  display:block;
-  padding:0;
-  border:1px solid var(--line);
-  background:#f4f3ed;
-  cursor:pointer;
-  overflow:hidden;
-}
-
-.thumb.active {
-  border:2px solid var(--green);
-}
-
-.thumb img {
-  width:100%;
-  height:auto;
-  aspect-ratio:1/1;
-  object-fit:contain;
-}
-
-.product-info {
-  padding:8px 0;
-}
-
-.eyebrow {
-  margin:0 0 13px;
-  color:var(--green2);
-  font-size:10px;
-  font-weight:bold;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-.rating {
-  margin-bottom:20px;
-  color:#747b70;
-  font-size:11px;
-}
-
-.stars {
-  color:var(--gold);
-  letter-spacing:2px;
-}
-
-h1,
-h2,
-h3 {
-  font-family:Georgia,"Times New Roman",serif;
-  font-weight:normal;
-}
-
-.product-info h1 {
-  margin:0 0 16px;
-  color:#29382c;
-  font-size:clamp(36px,4.5vw,55px);
-  line-height:1.08;
-  letter-spacing:-1px;
-}
-
-.intro {
-  max-width:470px;
-  margin:0 0 20px;
-  color:#6f766c;
-  font:15px/1.8 Georgia,serif;
-}
-
-.price-line {
-  display:flex;
-  align-items:baseline;
-  flex-wrap:wrap;
-  gap:12px;
-  margin:22px 0 7px;
-}
-
-.price {
-  color:var(--green);
-  font-size:30px;
-  font-weight:bold;
-}
-
-.old-price {
-  color:#999;
-  font-size:15px;
-  text-decoration:line-through;
-}
-
-.discount {
-  padding:5px 8px;
-  background:var(--sage);
-  color:var(--green);
-  font-size:10px;
-  font-weight:bold;
-}
-
-.tax-note {
-  color:#888e83;
-  font-size:10px;
-}
-
-.benefit-list {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-  margin:24px 0;
-  padding:20px 0;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-
-.benefit {
-  display:flex;
-  gap:8px;
-  color:#525b4e;
-  font-size:12px;
-  line-height:1.6;
-}
-
-.check {
-  color:var(--green);
-  font-weight:bold;
-}
-
-.purchase-label {
-  margin:22px 0 10px;
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-.purchase-option {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  padding:16px;
-  border:1px solid var(--green);
-  background:white;
-}
-
-.purchase-option strong {
-  font-size:13px;
-}
-
-.purchase-option small {
-  display:block;
-  margin-top:5px;
-  color:#858b80;
-  font-size:10px;
-}
-
-.buy-button {
-  display:block;
-  margin-top:15px;
-  padding:17px 20px;
-  background:var(--green);
-  color:white;
-  text-align:center;
-  text-decoration:none;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
-  transition:background .2s;
-}
-
-.buy-button:hover {
-  background:#263a2b;
-}
-
-.micro-trust {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:15px;
-  margin-top:16px;
-  color:#777d73;
-  font-size:10px;
-}
-
-.micro-trust span:before {
-  content:"✓";
-  margin-right:5px;
-  color:var(--green);
-}
-
-.notice {
-  margin-top:15px;
-  color:#898f85;
-  font-size:10px;
-  line-height:1.7;
-}
-
-/* SECTION */
-
-.section {
-  padding:85px 0;
-}
-
-.section.alt {
-  background:var(--cream);
-}
-
-.section-head {
-  max-width:700px;
-  margin:0 auto 42px;
-  text-align:center;
-}
-
-.section-head h2 {
-  margin:0 0 15px;
-  color:#304031;
-  font-size:clamp(30px,4vw,46px);
-  line-height:1.15;
-}
-
-.section-head p {
-  margin:0;
-  color:#747b70;
-  font:14px/1.8 Georgia,serif;
-}
-
-.story {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:65px;
-}
-
-.story-visual {
-  width:100%;
-  background:#f0efe8;
-}
-
-.story-visual img {
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-.story-copy h2 {
-  margin:0 0 18px;
-  color:#304031;
-  font-size:clamp(30px,4vw,44px);
-  line-height:1.15;
-}
-
-.story-copy p {
-  color:#6d7569;
-  font:15px/1.9 Georgia,serif;
-}
-
-.small-rule {
-  width:45px;
-  height:1px;
-  margin:22px 0;
-  background:var(--gold);
-}
-
-/* BENEFITS */
-
-.feature-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  border:1px solid var(--line);
-  background:var(--line);
-}
-
-.feature {
-  min-height:190px;
-  padding:30px 25px;
-  background:var(--paper);
-}
-
-.feature-number {
-  color:#9ca98f;
-  font:italic 26px Georgia,serif;
-}
-
-.feature h3 {
-  margin:15px 0 10px;
-  color:#354535;
-  font-size:23px;
-}
-
-.feature p {
-  margin:0;
-  color:#737b70;
-  font-size:12px;
-  line-height:1.8;
-}
-
-/* USAGE */
-
-.steps {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:22px;
-}
-
-.step {
-  min-width:0;
-  border-top:1px solid #cfd6c8;
-  padding-top:17px;
-}
-
-.step-image {
-  width:100%;
-  margin-bottom:18px;
-  background:#eeeee7;
-}
-
-.step-image img {
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-.step-number {
-  color:#9ba88e;
-  font:italic 34px Georgia,serif;
-}
-
-.step h3 {
-  margin:10px 0;
-  color:#334333;
-  font-size:23px;
-}
-
-.step p {
-  color:#747b70;
-  font-size:12px;
-  line-height:1.8;
-}
-
-/* INGREDIENTS */
-
-.ingredient-grid {
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:15px;
-}
-
-.ingredient-card {
-  min-width:0;
-  padding:12px;
-  background:white;
-}
-
-.ingredient-card img {
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-.ingredient-card h3 {
-  margin:12px 3px 5px;
-  color:var(--green);
-  font-size:18px;
-}
-
-.ingredient-card p {
-  margin:0 3px 8px;
-  color:#777d73;
-  font-size:11px;
-  line-height:1.6;
-}
-
-/* IMAGE WALL */
-
-.image-wall {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  align-items:start;
-  gap:18px;
-}
-
-.image-wall figure {
-  min-width:0;
-  margin:0;
-  background:white;
-}
-
-.image-wall img {
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-.image-wall figcaption {
-  padding:12px 14px;
-  color:#687064;
-  font-size:11px;
-  line-height:1.6;
-}
-
-/* TIMELINE */
-
-.timeline {
-  max-width:760px;
-  margin:auto;
-  padding-left:30px;
-  border-left:1px solid #bdc9b5;
-}
-
-.time-item {
-  position:relative;
-  padding:0 0 30px;
-}
-
-.time-item:before {
-  position:absolute;
-  top:5px;
-  left:-35px;
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:var(--green);
-  content:"";
-}
-
-.time-item small {
-  color:var(--green);
-  font-size:10px;
-  font-weight:bold;
-  letter-spacing:2px;
-}
-
-.time-item h3 {
-  margin:8px 0;
-  font-size:24px;
-}
-
-.time-item p {
-  margin:0;
-  color:#737b70;
-  font-size:13px;
-  line-height:1.8;
-}
-
-/* COMPARISON */
-
-.compare-table {
-  width:100%;
-  border-collapse:collapse;
-  background:white;
-  font-size:12px;
-}
-
-.compare-table th,
-.compare-table td {
-  padding:17px 14px;
-  border-bottom:1px solid var(--line);
-  text-align:center;
-}
-
-.compare-table th:first-child,
-.compare-table td:first-child {
-  text-align:left;
-}
-
-.compare-table thead th {
-  color:#344534;
-  font:normal 18px Georgia,serif;
-}
-
-.ours {
-  background:#edf1e9;
-  color:#3f5a3d;
-  font-weight:bold;
-}
-
-/* REVIEWS */
-
-.review-note {
-  margin-bottom:20px;
-  padding:13px 16px;
-  background:#f0efe8;
-  color:#777d73;
-  font-size:11px;
-  line-height:1.7;
-}
-
-.review-grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:16px;
-}
-
-.review-card {
-  padding:22px;
-  border:1px solid var(--line);
-  background:white;
-}
-
-.review-card .stars {
-  color:var(--gold);
-  letter-spacing:2px;
-}
-
-.review-card blockquote {
-  margin:14px 0;
-  color:#485447;
-  font:italic 16px/1.7 Georgia,serif;
-}
-
-.review-card small {
-  color:#81877d;
-  font-size:10px;
-}
-
-/* FAQ */
-
-.faq {
-  max-width:780px;
-  margin:auto;
-  border-top:1px solid var(--line);
-}
-
-details {
-  padding:20px 0;
-  border-bottom:1px solid var(--line);
-}
-
-summary {
-  display:flex;
-  justify-content:space-between;
-  gap:18px;
-  cursor:pointer;
-  list-style:none;
-  color:#344234;
-  font:normal 19px Georgia,serif;
-}
-
-summary::-webkit-details-marker {
-  display:none;
-}
-
-summary:after {
-  color:var(--green);
-  content:"+";
-  font:22px Arial,sans-serif;
-}
-
-details[open] summary:after {
-  content:"−";
-}
-
-details p {
-  max-width:690px;
-  margin:15px 0 0;
-  color:#72796f;
-  font-size:13px;
-  line-height:1.8;
-}
-
-/* CLOSING */
-
-.closing {
-  padding:75px 20px;
-  background:var(--green);
-  color:white;
-  text-align:center;
-}
-
-.closing h2 {
-  max-width:650px;
-  margin:0 auto 14px;
-  font-size:clamp(32px,5vw,48px);
-  line-height:1.1;
-}
-
-.closing p {
-  max-width:520px;
-  margin:0 auto 25px;
-  color:#e0e6dc;
-  font:14px/1.7 Georgia,serif;
-}
-
-.closing .buy-button {
-  max-width:330px;
-  margin:auto;
-  background:#f1e8d2;
-  color:var(--green);
-}
-
-/* CHECKOUT */
-
-.checkout-wrap {
-  max-width:720px;
-  margin:auto;
-}
-
-.ooef {
-  position:relative;
-  width:100%;
-  min-height:150px;
-}
-
-/* FOOTER AND MOBILE CTA */
-
-.footer {
-  padding:28px 20px;
-  color:#92998d;
-  text-align:center;
-  font-size:10px;
-  line-height:1.8;
-}
-
-.sticky {
-  position:fixed;
-  z-index:50;
-  right:0;
-  bottom:0;
-  left:0;
-  display:none;
-  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
-  border-top:1px solid var(--line);
-  background:rgba(255,254,250,.97);
-  backdrop-filter:blur(10px);
-}
-
-.sticky-inner {
-  display:flex;
-  max-width:var(--max);
-  margin:auto;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-}
-
-.sticky-price {
-  color:var(--green);
-  font-size:14px;
-  font-weight:bold;
-}
-
-.sticky-price small {
-  display:block;
-  color:#8a9086;
-  font-size:9px;
-  font-weight:normal;
-  text-decoration:line-through;
-}
-
-.sticky a {
-  padding:13px 22px;
-  background:var(--green);
-  color:white;
-  text-decoration:none;
-  font-size:11px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:850px) {
-  .nav {
-    display:none;
-  }
-
-  .product {
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .product-info {
-    padding:0 2px;
-  }
-
-  .story {
-    grid-template-columns:1fr;
-    gap:28px;
-  }
-
-  .feature-grid {
-    grid-template-columns:1fr 1fr;
-  }
-
-  .steps {
-    gap:14px;
-  }
-}
-
-@media(max-width:600px) {
-  .container {
-    width:calc(100% - 30px);
-  }
-
-  .header {
-    height:62px;
-    padding:0 15px;
-  }
-
-  .brand {
-    font-size:20px;
-  }
-
-  .brand small {
-    font-size:8px;
-  }
-
-  .header-cta {
-    padding:10px 12px;
-    font-size:9px;
-  }
-
-  .announcement {
-    font-size:9px;
-    letter-spacing:1px;
-  }
-
-  .crumb {
-    padding:14px 0;
-    font-size:10px;
-  }
-
-  .product {
-    gap:24px;
-    padding-bottom:50px;
-  }
-
-  .product-info h1 {
-    font-size:39px;
-  }
-
-  .intro {
-    font-size:14px;
-  }
-
-  .price {
-    font-size:27px;
-  }
-
-  .section {
-    padding:52px 0;
-  }
-
-  .section-head {
-    margin-bottom:28px;
-  }
-
-  .section-head h2 {
-    font-size:32px;
-  }
-
-  .feature-grid,
-  .steps,
-  .review-grid {
-    grid-template-columns:1fr;
-  }
-
-  .feature {
-    min-height:0;
-    padding:23px;
-  }
-
-  .step {
-    padding-top:15px;
-  }
-
-  .ingredient-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:10px;
-  }
-
-  .ingredient-card {
-    padding:8px;
-  }
-
-  .image-wall {
-    grid-template-columns:1fr;
-    gap:14px;
-  }
-
-  .review-card {
-    padding:18px;
-  }
-
-  .compare-table {
-    font-size:10px;
-  }
-
-  .compare-table th,
-  .compare-table td {
-    padding:12px 7px;
-  }
-
-  .compare-table thead th {
-    font-size:14px;
-  }
-
-  .sticky {
-    display:block;
-  }
-
-  .footer {
-    padding-bottom:90px;
-  }
-}
-
-@media(prefers-reduced-motion:reduce) {
-  html {
-    scroll-behavior:auto;
-  }
-
-  *,
-  *:before,
-  *:after {
-    transition:none!important;
-  }
+  -webkit-font-smoothing:antialiased
+}
+img{display:block;max-width:100%;width:100%;height:auto}
+a{color:inherit}
+button{font:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.announcement{
+  background:linear-gradient(90deg,#101c17,#183e2d);
+  color:white;text-align:center;padding:10px 12px;
+  font-size:10px;letter-spacing:1.5px
+}
+.header{
+  height:70px;display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;padding:0 max(22px,calc((100% - var(--max))/2));
+  border-bottom:1px solid var(--line);background:#fff
+}
+.nav{display:flex;gap:22px}
+.nav a{text-decoration:none;font-size:12px;color:#4c554c}
+.brand{text-align:center;color:var(--green);font:25px Georgia,serif}
+.brand small{display:block;font:8px Arial;letter-spacing:2px}
+.header-right{justify-self:end}
+.header-right a{
+  background:var(--green);color:#fff;text-decoration:none;
+  padding:12px 17px;font-size:10px;letter-spacing:1px
+}
+.crumb{padding:18px 0;color:#92978e;font-size:11px}
+.hero{
+  display:grid;grid-template-columns:1.05fr .95fr;
+  gap:55px;align-items:start;padding:12px 0 65px
+}
+.gallery{min-width:0}
+.main-frame{
+  position:relative;background:#f8f8f5;
+  display:flex;align-items:center;justify-content:center;
+  min-height:300px;overflow:hidden
+}
+.main-frame img{
+  width:100%;height:auto;max-height:760px;
+  object-fit:contain;transition:opacity .18s
+}
+.gallery-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:38px;height:38px;border:1px solid #d9ded7;
+  background:rgba(255,255,255,.92);color:var(--green);
+  cursor:pointer;font-size:20px;z-index:2
+}
+.gallery-arrow.prev{left:12px}
+.gallery-arrow.next{right:12px}
+.gallery-count{
+  position:absolute;right:12px;bottom:12px;
+  padding:7px 10px;background:var(--green);
+  color:#fff;font-size:10px;letter-spacing:1px
+}
+.thumb-track{
+  display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:12px 1px 8px;scrollbar-width:thin
+}
+.thumb{
+  flex:0 0 86px;width:86px;padding:0;
+  border:1px solid var(--line);background:#f6f6f1;
+  cursor:pointer;scroll-snap-align:start
+}
+.thumb.active{border:2px solid var(--green)}
+.thumb img{width:100%;height:78px;object-fit:contain}
+.product-info{padding:8px 0}
+.social-proof{
+  display:flex;align-items:center;gap:7px;
+  color:#626b61;font-size:11px;margin-bottom:18px
+}
+.stars{color:#17633e;letter-spacing:2px}
+.eyebrow{
+  color:#667d65;font-size:10px;letter-spacing:2px;
+  font-weight:bold;text-transform:uppercase;margin:0 0 12px
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:normal}
+h1{
+  margin:0 0 15px;color:#1e3025;
+  font-size:clamp(36px,4.3vw,53px);line-height:1.08
+}
+.lead{font:italic 15px/1.7 Georgia,serif;color:#646b62;margin:0 0 22px}
+.price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 5px}
+.price{font-size:30px;font-weight:bold;color:#171d19}
+.old-price{font-size:15px;color:#8a8d86;text-decoration:line-through}
+.discount{
+  background:#e9efe8;color:#24543d;
+  padding:5px 8px;font-size:10px;font-weight:bold
+}
+.small-note{font-size:10px;color:#92968e;line-height:1.6}
+.quick-benefits{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:16px 12px;border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);padding:22px 0;margin:22px 0
+}
+.quick-benefit{display:flex;gap:9px;font-size:12px;line-height:1.5;color:#4e594e}
+.quick-benefit b{color:var(--green)}
+.sale-box{
+  border:1px solid #e3e5dd;border-radius:12px;
+  padding:16px;margin:20px 0
+}
+.sale-box strong{font-size:13px}
+.sale-box p{font-size:11px;color:#777;margin:5px 0 12px}
+.sale-line{height:6px;border-radius:10px;background:#eee;overflow:hidden}
+.sale-line span{display:block;width:78%;height:100%;background:#4c805c}
+.offer-title{text-align:center;font-size:14px;font-weight:bold;margin:22px 0 12px}
+.package{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:10px;padding:17px;border:1px solid #9cad9e;
+  border-radius:10px;margin:10px 0;background:#fff
+}
+.package.selected{border:2px solid var(--green)}
+.package-left{display:flex;gap:10px;align-items:center}
+.package input{accent-color:var(--green)}
+.package strong{font-size:13px}
+.package small{display:block;color:#81877e;font-size:10px;margin-top:4px}
+.package-price{font-size:14px;font-weight:bold;white-space:nowrap}
+.buy-button{
+  display:block;background:var(--green);color:white;
+  text-align:center;text-decoration:none;padding:17px;
+  font-size:12px;font-weight:bold;letter-spacing:1.5px;
+  margin-top:18px;border-radius:4px
+}
+.ship-note{display:flex;justify-content:space-between;gap:10px;margin:15px 0;color:#6d8872;font-size:11px}
+.guarantee{
+  display:flex;gap:12px;padding:16px;margin-top:22px;
+  background:#edf4ef;border:1px solid #d7e5d9;border-radius:9px
+}
+.guarantee b{font-size:12px;color:var(--green)}
+.guarantee p{font-size:11px;color:#718075;line-height:1.5;margin:5px 0 0}
+.section{padding:78px 0}
+.section.alt{background:var(--cream)}
+.section-head{max-width:700px;text-align:center;margin:0 auto 38px}
+.section-head h2{
+  color:#213c2c;font-size:clamp(30px,4vw,45px);
+  line-height:1.15;margin:0 0 13px
+}
+.section-head p{font:14px/1.8 Georgia,serif;color:#737a70;margin:0}
+.split{
+  display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center
+}
+.visual img{width:100%;height:auto;object-fit:contain}
+.copy h2{font-size:clamp(30px,4vw,43px);line-height:1.15;color:#203d2c;margin:0 0 16px}
+.copy p{font:14px/1.9 Georgia,serif;color:#6d756b}
+.rule{height:1px;width:45px;background:var(--gold);margin:20px 0}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.benefit-card{border:1px solid var(--line);padding:25px;background:#fff}
+.benefit-card span{color:#8b9c83;font:italic 25px Georgia}
+.benefit-card h3{font-size:22px;color:var(--green);margin:13px 0 8px}
+.benefit-card p{font-size:12px;line-height:1.8;color:#737a70;margin:0}
+.ingredient-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ingredient-card{background:white;padding:10px}
+.ingredient-card img{width:100%;height:auto;object-fit:contain}
+.ingredient-card h3{font-size:18px;color:var(--green);margin:12px 3px 5px}
+.ingredient-card p{font-size:11px;color:#777e74;line-height:1.6;margin:0 3px 7px}
+.usage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.usage-card img{width:100%;height:auto;object-fit:contain;background:#f2f1ea}
+.usage-card h3{font-size:22px;color:var(--green);margin:14px 0 7px}
+.usage-card p{font-size:12px;line-height:1.8;color:#747b71}
+.image-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.image-card{margin:0;background:#fff}
+.image-card img{width:100%;height:auto;object-fit:contain}
+.image-card figcaption{padding:13px 15px;font-size:12px;line-height:1.7;color:#687166}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.review-card{background:#fff;border:1px solid var(--line);padding:20px}
+.review-card img{width:100%;height:auto;object-fit:contain;margin-bottom:14px}
+.review-card .stars{font-size:13px}
+.review-card blockquote{
+  margin:12px 0;color:#4c594c;
+  font:italic 15px/1.7 Georgia,serif
+}
+.review-card small{font-size:10px;color:#858b82}
+.review-caption{font-size:10px;color:#838a80;text-align:center;margin-top:18px}
+.timeline{max-width:760px;margin:auto}
+.timeline-item{
+  display:grid;grid-template-columns:110px 1fr;gap:20px;
+  padding:20px 0;border-bottom:1px solid var(--line)
+}
+.timeline-item b{font-size:11px;color:var(--green);letter-spacing:1px}
+.timeline-item h3{font-size:23px;color:#263d2d;margin:0 0 7px}
+.timeline-item p{font-size:12px;line-height:1.8;color:#737b71;margin:0}
+.compare{width:100%;border-collapse:collapse;background:#fff;font-size:12px}
+.compare th,.compare td{padding:16px 12px;border-bottom:1px solid var(--line);text-align:center}
+.compare th:first-child,.compare td:first-child{text-align:left}
+.compare th{font:normal 17px Georgia;color:var(--green)}
+.compare .ours{background:#edf3ec}
+.faq{max-width:780px;margin:auto;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{list-style:none;cursor:pointer;font:19px Georgia;color:#304333;display:flex;justify-content:space-between;gap:15px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:22px Arial;color:var(--green)}
+details[open] summary:after{content:"−"}
+details p{font-size:13px;line-height:1.8;color:#747b71;margin:13px 0 0}
+.closing{background:var(--dark);color:white;text-align:center;padding:70px 20px}
+.closing h2{font-size:clamp(30px,4vw,46px);margin:0 auto 12px}
+.closing p{max-width:560px;margin:0 auto 20px;color:#dce7dd;font:14px/1.8 Georgia,serif}
+.closing .buy-button{max-width:330px;margin:20px auto 0;background:#e9efe8;color:var(--green)}
+.checkout-wrap{max-width:720px;margin:auto}
+.ooef{position:relative;width:100%;min-height:150px}
+.footer{text-align:center;padding:28px 20px 95px;color:#899087;font-size:10px;line-height:1.8}
+.mobile-bar{
+  display:none;position:fixed;z-index:50;bottom:0;left:0;right:0;
+  background:rgba(255,255,255,.97);border-top:1px solid var(--line);
+  padding:10px 15px calc(10px + env(safe-area-inset-bottom))
+}
+.mobile-inner{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mobile-price{font-size:14px;font-weight:bold;color:var(--green)}
+.mobile-price small{display:block;font-size:9px;color:#888;text-decoration:line-through}
+.mobile-inner a{background:var(--green);color:white;padding:13px 20px;text-decoration:none;font-size:11px}
+@media(max-width:900px){
+  .header{grid-template-columns:1fr auto}
+  .nav{display:none}
+  .brand{justify-self:start}
+  .hero{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media(max-width:650px){
+  .container{width:calc(100% - 28px)}
+  .header{height:60px;padding:0 14px}
+  .brand{font-size:21px}
+  .header-right a{padding:10px 12px;font-size:9px}
+  .announcement{font-size:9px;letter-spacing:1px}
+  .hero{grid-template-columns:1fr;gap:22px;padding-bottom:42px}
+  .main-frame{min-height:0}
+  .main-frame img{max-height:none}
+  .thumb{flex-basis:74px;width:74px}
+  .thumb img{height:68px}
+  .product-info h1{font-size:39px}
+  .price{font-size:27px}
+  .section{padding:52px 0}
+  .section-head{margin-bottom:27px}
+  .section-head h2{font-size:32px}
+  .split{grid-template-columns:1fr;gap:25px}
+  .benefit-grid{grid-template-columns:1fr}
+  .ingredient-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .usage-grid{grid-template-columns:1fr;gap:24px}
+  .image-grid{grid-template-columns:1fr;gap:14px}
+  .review-grid{grid-template-columns:1fr}
+  .timeline-item{grid-template-columns:78px 1fr;gap:12px}
+  .compare{font-size:10px}
+  .compare th,.compare td{padding:12px 7px}
+  .compare th{font-size:14px}
+  .mobile-bar{display:block}
+  .footer{padding-bottom:95px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
 }
 </style>
 </head>
@@ -979,815 +279,418 @@ details p {
 <body>
 
 <div class="announcement">
-  Ritual perawatan kulit kepala, lebih praktis setiap hari
+  Perawatan rambut praktis, mulai dari rutinitas keramas
 </div>
 
 <header class="header">
-  <a class="brand" href="#">
-    SCALP RITUAL
-    <small>BOTANICAL HAIR CARE</small>
-  </a>
-
   <nav class="nav">
-    <a href="#cerita">Tentang Produk</a>
-    <a href="#manfaat">Keunggulan</a>
+    <a href="#produk">Produk</a>
+    <a href="#ingredients">Kandungan</a>
     <a href="#cara-pakai">Cara Pakai</a>
-    <a href="#faq">FAQ</a>
   </nav>
-
-  <a class="header-cta" href="#order-form">Pesan Sekarang</a>
+  <div class="brand">SCALP RITUAL<small>BOTANICAL HAIR CARE</small></div>
+  <div class="header-right"><a href="#order-form">PESAN SEKARANG</a></div>
 </header>
 
 <main>
-
 <div class="container">
-  <div class="crumb">
-    Beranda / Perawatan Rambut / Korean Scalp Revival Bar
-  </div>
+  <div class="crumb">Beranda / Perawatan Rambut / Korean Scalp Revival Bar</div>
 
-  <!-- HERO AND PRODUCT GALLERY -->
-
-  <section class="product">
-
+  <!-- HERO + GALERI 9 GAMBAR -->
+  <section class="hero" id="produk">
     <div class="gallery">
-      <div class="main-photo">
-        <img
-          id="mainProductImage"
-          src="https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=1200"
-          alt="Korean Scalp Revival Bar"
-          fetchpriority="high"
-        >
+      <div class="main-frame">
+        <button class="gallery-arrow prev" type="button" aria-label="Foto sebelumnya">‹</button>
+        <img id="mainImage" src="https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=1200" alt="Korean Scalp Revival Bar">
+        <button class="gallery-arrow next" type="button" aria-label="Foto berikutnya">›</button>
+        <div class="gallery-count" id="galleryCount">1 / 9</div>
       </div>
-
-      <div class="thumbs">
-
-        <button class="thumb active" type="button"
-          data-image="https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=1200"
-          aria-label="Lihat foto produk pertama">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=500"
-            alt="Foto produk utama">
-        </button>
-
-        <button class="thumb" type="button"
-          data-image="https://yoracare.com/cdn/shop/files/yoracare-OG-img7.webp?v=1791883706&width=1200"
-          aria-label="Lihat foto produk kedua">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/yoracare-OG-img7.webp?v=1791883706&width=500"
-            alt="Detail produk">
-        </button>
-
-        <button class="thumb" type="button"
-          data-image="https://yoracare.com/cdn/shop/files/yoracare-OG-img3.webp?v=1791883706&width=1200"
-          aria-label="Lihat foto produk ketiga">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/yoracare-OG-img3.webp?v=1791883706&width=500"
-            alt="Foto lifestyle produk">
-        </button>
-
-        <button class="thumb" type="button"
-          data-image="https://yoracare.com/cdn/shop/files/yoracare-OG-img5.webp?v=1791883707&width=1200"
-          aria-label="Lihat foto produk keempat">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/yoracare-OG-img5.webp?v=1791883707&width=500"
-            alt="Foto penggunaan produk">
-        </button>
-
+      <div class="thumb-track" id="thumbTrack">
+        <button class="thumb active" data-index="0" aria-label="Foto 1"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=350" alt="Produk utama"></button>
+        <button class="thumb" data-index="1" aria-label="Foto 2"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img1.webp?v=1791883707&width=350" alt="Detail produk"></button>
+        <button class="thumb" data-index="2" aria-label="Foto 3"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img2.webp?v=1791883706&width=350" alt="Visual botanical"></button>
+        <button class="thumb" data-index="3" aria-label="Foto 4"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img3.webp?v=1791883706&width=350" alt="Visual pengguna"></button>
+        <button class="thumb" data-index="4" aria-label="Foto 5"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img4.jpg?v=1791883707&width=350" alt="Visual perbandingan hasil"></button>
+        <button class="thumb" data-index="5" aria-label="Foto 6"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img5.webp?v=1791883707&width=350" alt="Cara penggunaan"></button>
+        <button class="thumb" data-index="6" aria-label="Foto 7"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img6.webp?v=1791883707&width=350" alt="Kandungan botanical"></button>
+        <button class="thumb" data-index="7" aria-label="Foto 8"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img7.webp?v=1791883706&width=350" alt="Satu bar satu ritual"></button>
+        <button class="thumb" data-index="8" aria-label="Foto 9"><img src="https://yoracare.com/cdn/shop/files/yoracare-OG-img8.webp?v=1791883706&width=350" alt="Kumpulan visual hasil"></button>
       </div>
     </div>
 
     <div class="product-info">
-
-      <div class="rating">
-        <span class="stars">★★★★★</span>
-        Korean-inspired hair care
-      </div>
-
-      <p class="eyebrow">Daily Scalp Care</p>
-
+      <div class="social-proof"><span class="stars">★★★★★</span> Perawatan rambut berbentuk bar</div>
+      <p class="eyebrow">Root care inspired by Korea</p>
       <h1>Korean Scalp Revival Bar</h1>
+      <p class="lead">Kenalkan cara berbeda menikmati rutinitas keramas. Satu bar praktis untuk membantu membersihkan rambut dan kulit kepala.</p>
 
-      <p class="intro">
-        Shampoo bar praktis untuk membantu membersihkan kulit kepala
-        dan menjadi bagian dari rutinitas perawatan rambut harian.
-      </p>
-
-      <div class="price-line">
+      <div class="price-row">
         <span class="price">Rp155.900</span>
         <span class="old-price">Rp349.000</span>
-        <span class="discount">HEMAT 55%</span>
+        <span class="discount">PROMO</span>
+      </div>
+      <p class="small-note">Harga promo untuk pembelian satu bar.</p>
+
+      <div class="quick-benefits">
+        <div class="quick-benefit"><b>✓</b> Format padat dan praktis</div>
+        <div class="quick-benefit"><b>✓</b> Mudah digunakan saat keramas</div>
+        <div class="quick-benefit"><b>✓</b> Terinspirasi perawatan Korea</div>
+        <div class="quick-benefit"><b>✓</b> Tanpa botol shampoo cair</div>
+        <div class="quick-benefit"><b>✓</b> Praktis untuk rutinitas harian</div>
+        <div class="quick-benefit"><b>✓</b> Mudah disimpan setelah dipakai</div>
       </div>
 
-      <p class="tax-note">
-        Harga promo untuk 1 produk.
-      </p>
-
-      <div class="benefit-list">
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Format shampoo bar yang praktis</span>
-        </div>
-
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Mudah digenggam saat keramas</span>
-        </div>
-
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Bagian dari rutinitas perawatan rambut</span>
-        </div>
-
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Format padat tanpa botol shampoo cair</span>
-        </div>
+      <div class="sale-box">
+        <strong>Penawaran spesial</strong>
+        <p>Dapatkan Korean Scalp Revival Bar dengan harga promo.</p>
+        <div class="sale-line"><span></span></div>
       </div>
 
-      <div class="purchase-label">Pilihan pembelian</div>
-
-      <div class="purchase-option">
-        <span>
-          <strong>1 × Korean Scalp Revival Bar</strong>
-          <small>Harga promo satuan</small>
-        </span>
-        <strong>Rp155.900</strong>
+      <div class="offer-title">Pilih paket pembelian</div>
+      <div class="package selected">
+        <div class="package-left">
+          <input type="radio" name="package" checked>
+          <div><strong>1 Korean Scalp Revival Bar</strong><small>Pilihan satuan</small></div>
+        </div>
+        <div class="package-price">Rp155.900</div>
       </div>
 
-      <a class="buy-button" href="#order-form">
-        PESAN SEKARANG
-      </a>
+      <a class="buy-button" href="#order-form">PESAN SEKARANG</a>
+      <div class="ship-note"><span>● Siap dipesan</span><span>Checkout online</span></div>
 
-      <div class="micro-trust">
-        <span>Form pemesanan online</span>
-        <span>Checkout OrderOnline</span>
+      <div class="guarantee">
+        <div>✓</div>
+        <div><b>Pesan dengan mudah</b><p>Isi detail penerima dan alamat melalui formulir pemesanan online.</p></div>
       </div>
-
-      <p class="notice">
-        Periksa informasi bahan, petunjuk penggunaan, dan detail produk
-        pada kemasan resmi sebelum menggunakan produk.
-      </p>
-
     </div>
   </section>
 </div>
 
-<!-- PRODUCT STORY -->
-
-<section class="section alt" id="cerita">
-  <div class="container story">
-
-    <div class="story-visual">
-      <img loading="lazy"
-        src="https://yoracare.com/cdn/shop/files/section_2_img_new.webp?v=1789498689&width=1200"
-        alt="Visual lifestyle perawatan rambut">
+<!-- CERITA PRODUK -->
+<section class="section alt">
+  <div class="container split">
+    <div class="visual">
+      <img loading="lazy" src="https://yoracare.com/cdn/shop/files/section_2_img_new.webp?v=1789498689&width=1200" alt="Inspirasi rutinitas perawatan rambut">
     </div>
-
-    <div class="story-copy">
-      <p class="eyebrow">Mulai dari kulit kepala</p>
-
-      <h2>Perawatan rambut dimulai dari rutinitas yang tepat.</h2>
-
-      <div class="small-rule"></div>
-
-      <p>
-        Kulit kepala juga membutuhkan perhatian saat keramas.
-        Korean Scalp Revival Bar hadir dalam format padat
-        yang mudah digenggam dan diaplikasikan pada rambut basah.
-      </p>
-
-      <p>
-        Jadikan momen keramas sebagai bagian dari rutinitas
-        perawatan diri yang sederhana dan konsisten.
-      </p>
+    <div class="copy">
+      <p class="eyebrow">Ritual perawatan rambut</p>
+      <h2>Mulai dari rutinitas kecil yang terasa berbeda.</h2>
+      <div class="rule"></div>
+      <p>Keramas bukan sekadar membasahi rambut. Ini waktunya membersihkan kulit kepala, memijat dengan lembut, dan memberi perhatian pada rambut setelah seharian beraktivitas.</p>
+      <p>Korean Scalp Revival Bar menghadirkan format shampoo bar yang ringkas dan mudah digunakan dalam rutinitas tersebut.</p>
     </div>
-
   </div>
 </section>
 
-<!-- BENEFITS -->
-
-<section class="section" id="manfaat">
+<!-- BENEFIT -->
+<section class="section">
   <div class="container">
-
     <div class="section-head">
-      <p class="eyebrow">Kenali formatnya</p>
-      <h2>Praktis dalam bentuk bar</h2>
-      <p>
-        Beberapa hal sederhana yang membuat format shampoo bar
-        mudah dimasukkan ke rutinitas keramas.
-      </p>
+      <p class="eyebrow">Kenapa format bar?</p>
+      <h2>Praktis, ringkas, dan mudah digunakan</h2>
+      <p>Kenali beberapa hal yang membuat shampoo bar menjadi pilihan format perawatan rambut.</p>
     </div>
-
-    <div class="feature-grid">
-
-      <article class="feature">
-        <div class="feature-number">01</div>
-        <h3>Format Padat</h3>
-        <p>
-          Bentuk bar ringkas dan mudah disimpan setelah digunakan.
-        </p>
-      </article>
-
-      <article class="feature">
-        <div class="feature-number">02</div>
-        <h3>Aplikasi Praktis</h3>
-        <p>
-          Digunakan pada rambut basah sesuai petunjuk pada kemasan.
-        </p>
-      </article>
-
-      <article class="feature">
-        <div class="feature-number">03</div>
-        <h3>Rutinitas Sederhana</h3>
-        <p>
-          Alternatif format perawatan rambut tanpa botol shampoo cair.
-        </p>
-      </article>
-
+    <div class="benefit-grid">
+      <article class="benefit-card"><span>01</span><h3>Bentuk Padat</h3><p>Format bar yang ringkas dan tidak membutuhkan botol shampoo cair.</p></article>
+      <article class="benefit-card"><span>02</span><h3>Mudah Digenggam</h3><p>Bentuknya praktis untuk digunakan saat rutinitas keramas.</p></article>
+      <article class="benefit-card"><span>03</span><h3>Simple Routine</h3><p>Satu produk yang mudah disimpan dan dibawa saat bepergian.</p></article>
     </div>
   </div>
 </section>
 
 <!-- INGREDIENTS -->
-
 <section class="section alt" id="ingredients">
   <div class="container">
-
     <div class="section-head">
       <p class="eyebrow">Botanical ingredients</p>
-      <h2>Kenali visual bahan produk</h2>
-      <p>
-        Materi visual bahan dari halaman referensi.
-        Pastikan nama dan keberadaan setiap bahan cocok
-        dengan komposisi pada label produk yang kamu jual.
-      </p>
+      <h2>Terinspirasi dari bahan-bahan botanical</h2>
+      <p>Empat bahan yang ditonjolkan dalam formula produk ini. Periksa komposisi pada kemasan untuk informasi lengkap.</p>
     </div>
-
     <div class="ingredient-grid">
-
       <article class="ingredient-card">
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/He_Shou_Wu.webp?v=1789500339&width=600"
-          alt="Visual He Shou Wu">
-        <h3>He Shou Wu</h3>
-        <p>Visual bahan dari materi referensi.</p>
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/He_Shou_Wu.webp?v=1789500339&width=600" alt="He Shou Wu">
+        <h3>He Shou Wu</h3><p>Dikenal sebagai salah satu akar yang digunakan dalam tradisi perawatan herbal Asia.</p>
       </article>
-
       <article class="ingredient-card">
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/Black_Ganoderma_Mushroom.webp?v=1789500340&width=600"
-          alt="Visual Black Ganoderma Mushroom">
-        <h3>Black Ganoderma</h3>
-        <p>Visual bahan dari materi referensi.</p>
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/Black_Ganoderma_Mushroom.webp?v=1789500340&width=600" alt="Black Ganoderma">
+        <h3>Black Ganoderma</h3><p>Jamur yang dikenal dalam berbagai tradisi herbal Asia.</p>
       </article>
-
       <article class="ingredient-card">
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/Dong_Quai.webp?v=1789500339&width=600"
-          alt="Visual Dong Quai">
-        <h3>Dong Quai</h3>
-        <p>Visual bahan dari materi referensi.</p>
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/Dong_Quai.webp?v=1789500339&width=600" alt="Dong Quai">
+        <h3>Dong Quai</h3><p>Bahan botanikal yang dikenal dalam tradisi perawatan herbal.</p>
       </article>
-
       <article class="ingredient-card">
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/Woad_Root.webp?v=1789500340&width=600"
-          alt="Visual Woad Root">
-        <h3>Woad Root</h3>
-        <p>Visual bahan dari materi referensi.</p>
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/Woad_Root.webp?v=1789500340&width=600" alt="Woad Root">
+        <h3>Woad Root</h3><p>Akar tanaman yang menjadi bagian dari inspirasi formula botanical.</p>
       </article>
-
     </div>
   </div>
 </section>
 
 <!-- HOW TO USE -->
-
 <section class="section" id="cara-pakai">
   <div class="container">
-
     <div class="section-head">
-      <p class="eyebrow">Ritual penggunaan</p>
-      <h2>3 langkah saat keramas</h2>
-      <p>
-        Panduan umum penggunaan shampoo bar.
-        Ikuti petunjuk resmi pada kemasan produk.
-      </p>
+      <p class="eyebrow">How to use</p>
+      <h2>Ritual keramas dalam beberapa langkah</h2>
+      <p>Gunakan sesuai petunjuk pada kemasan dan nikmati rutinitas perawatan rambut dengan lebih praktis.</p>
     </div>
-
-    <div class="steps">
-
-      <article class="step">
-        <div class="step-image">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/hf_20260305_003716_8193b858-c5ed-4969-90b3-e2d974182020.webp?v=1772908356&width=600"
-            alt="Langkah membasahi rambut">
-        </div>
-        <div class="step-number">01</div>
-        <h3>Basahi Rambut</h3>
-        <p>
-          Basahi rambut dan kulit kepala secara merata
-          sebelum menggunakan shampoo bar.
-        </p>
+    <div class="usage-grid">
+      <article class="usage-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_003716_8193b858-c5ed-4969-90b3-e2d974182020.webp?v=1772908356&width=800" alt="Mengaplikasikan shampoo bar">
+        <h3>1. Basahi dan usapkan</h3><p>Basahi rambut, lalu usapkan bar sesuai petunjuk penggunaan.</p>
       </article>
-
-      <article class="step">
-        <div class="step-image">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/hf_20260305_004006_4e56da85-ff5b-4822-a618-72c716cb9535.webp?v=1772908367&width=600"
-            alt="Langkah menggunakan shampoo bar">
-        </div>
-        <div class="step-number">02</div>
-        <h3>Usapkan Perlahan</h3>
-        <p>
-          Usapkan bar secukupnya pada rambut atau telapak tangan
-          mengikuti instruksi pemakaian.
-        </p>
+      <article class="usage-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_004006_4e56da85-ff5b-4822-a618-72c716cb9535.webp?v=1772908367&width=800" alt="Memijat kulit kepala">
+        <h3>2. Pijat perlahan</h3><p>Pijat kulit kepala dengan lembut saat membersihkan rambut.</p>
       </article>
-
-      <article class="step">
-        <div class="step-image">
-          <img loading="lazy"
-            src="https://yoracare.com/cdn/shop/files/hf_20260305_004133_751532ac-9d6a-479a-a3f2-11312f32feff.webp?v=1772908386&width=600"
-            alt="Langkah membilas rambut">
-        </div>
-        <div class="step-number">03</div>
-        <h3>Pijat dan Bilas</h3>
-        <p>
-          Pijat lembut kulit kepala, lalu bilas hingga bersih.
-          Simpan bar di tempat kering.
-        </p>
+      <article class="usage-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_004133_751532ac-9d6a-479a-a3f2-11312f32feff.webp?v=1772908386&width=800" alt="Membilas rambut">
+        <h3>3. Bilas hingga bersih</h3><p>Bilas rambut sampai bersih dan simpan bar di tempat kering.</p>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- LIFESTYLE GALLERY -->
-
+<!-- VISUAL HASIL -->
 <section class="section alt">
   <div class="container">
-
     <div class="section-head">
-      <p class="eyebrow">Daily hair ritual</p>
-      <h2>Bagian dari rutinitas perawatan diri</h2>
-      <p>
-        Kenali tampilan produk dan materi visual penggunaannya.
-      </p>
+      <p class="eyebrow">Cerita visual pengguna</p>
+      <h2>Setiap perjalanan perawatan punya ceritanya</h2>
+      <p>Foto memperlihatkan contoh dokumentasi perubahan rambut yang ditampilkan pada materi produk. Hasil penggunaan dapat berbeda pada setiap orang.</p>
     </div>
-
-    <div class="image-wall">
-
-      <figure>
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/yoracare-OG-img2.webp?v=1791883706&width=1200"
-          alt="Visual produk dan lifestyle">
-        <figcaption>Visual produk dan rutinitas perawatan.</figcaption>
+    <div class="image-grid">
+      <figure class="image-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_002139_a7dd5799-ea2c-431e-aac9-0830b10124b6.webp?v=1772908268&width=1000" alt="Dokumentasi rambut sebelum dan sesudah">
+        <figcaption>Perhatikan perubahan tampilan rambut dari waktu ke waktu. Konsistensi dan kondisi awal setiap orang tidak sama.</figcaption>
       </figure>
-
-      <figure>
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/yoracare-OG-img4.jpg?v=1791883707&width=1200"
-          alt="Visual produk dari materi referensi">
-        <figcaption>Materi visual produk dari halaman referensi.</figcaption>
+      <figure class="image-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_002740_f316d5b0-ba4d-439b-b066-eeed483a0f5c.webp?v=1772908291&width=1000" alt="Dokumentasi rambut pengguna">
+        <figcaption>Setiap rambut memiliki karakter dan kebutuhan perawatan yang berbeda.</figcaption>
       </figure>
-
+      <figure class="image-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/hf_20260305_002904_4623e8f6-469c-4f33-a433-ad86a35d3ecb.webp?v=1772908307&width=1000" alt="Dokumentasi rambut pengguna lainnya">
+        <figcaption>Gunakan informasi ini sebagai gambaran visual, bukan jaminan hasil yang sama.</figcaption>
+      </figure>
+      <figure class="image-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/yoracare-OG-img8.webp?v=1791883706&width=1200" alt="Kolase dokumentasi rambut">
+        <figcaption>Dokumentasi visual dari beberapa karakter rambut.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT ROUTINE -->
-
+<!-- ULASAN -->
 <section class="section">
   <div class="container">
-
     <div class="section-head">
-      <p class="eyebrow">Konsistensi adalah kunci</p>
-      <h2>Kenali kebutuhan rambutmu</h2>
-      <p>
-        Setiap orang memiliki kondisi rambut dan kulit kepala
-        yang berbeda. Perhatikan respons kulit kepala saat
-        mencoba rutinitas baru.
-      </p>
+      <p class="eyebrow">Cerita pengguna</p>
+      <h2>Pengalaman yang dibagikan pengguna</h2>
+      <p>Beberapa cerita penggunaan yang diringkas dan diterjemahkan dari ulasan produk.</p>
     </div>
+    <div class="review-grid">
+      <article class="review-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/yoracare-OG-img3.webp?v=1791883706&width=800" alt="Pengguna memegang shampoo bar">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Awalnya saya cukup ragu mencoba shampoo berbentuk bar. Namun, formatnya ternyata mudah digunakan dan membuat rutinitas keramas terasa berbeda.”</blockquote>
+        <small>Ringkasan terjemahan ulasan pengguna produk</small>
+      </article>
+      <article class="review-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/section_2_img_new.webp?v=1789498689&width=800" alt="Visual rambut pengguna">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Saya suka sensasi bersih setelah keramas. Bentuk bar-nya juga praktis dan tidak perlu membawa botol shampoo besar.”</blockquote>
+        <small>Ringkasan terjemahan ulasan pengguna produk</small>
+      </article>
+      <article class="review-card">
+        <img loading="lazy" src="https://yoracare.com/cdn/shop/files/yoracare-OG-img7.webp?v=1791883706&width=800" alt="Produk shampoo bar">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Penggunaannya cukup sederhana. Tinggal basahi rambut, gunakan bar, pijat, lalu bilas sampai bersih.”</blockquote>
+        <small>Ringkasan terjemahan ulasan pengguna produk</small>
+      </article>
+    </div>
+    <p class="review-caption">Ulasan diadaptasi dari halaman produk sumber, bukan ulasan pembeli toko ini.</p>
+  </div>
+</section>
 
+<!-- TIMELINE -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Rutinitas perawatan</p>
+      <h2>Kenali kebutuhan rambutmu</h2>
+      <p>Perawatan rambut bukan proses instan. Perhatikan kondisi rambut dan respons kulit kepala saat mencoba produk baru.</p>
+    </div>
     <div class="timeline">
-
-      <div class="time-item">
-        <small>LANGKAH 01</small>
-        <h3>Mulai sesuai petunjuk label</h3>
-        <p>
-          Gunakan sesuai petunjuk pada kemasan dan perhatikan
-          kenyamanan kulit kepala.
-        </p>
-      </div>
-
-      <div class="time-item">
-        <small>LANGKAH 02</small>
-        <h3>Perhatikan respons rambut</h3>
-        <p>
-          Amati apakah rambut dan kulit kepala terasa cocok
-          dengan rutinitas baru.
-        </p>
-      </div>
-
-      <div class="time-item">
-        <small>LANGKAH 03</small>
-        <h3>Jaga rutinitas perawatan</h3>
-        <p>
-          Sesuaikan frekuensi keramas dengan kebutuhan rambut.
-          Hentikan pemakaian jika timbul iritasi.
-        </p>
-      </div>
-
+      <div class="timeline-item"><b>SAAT KERAMAS</b><div><h3>Mulai dengan rambut basah</h3><p>Gunakan shampoo bar mengikuti instruksi pemakaian pada kemasan.</p></div></div>
+      <div class="timeline-item"><b>SETELAHNYA</b><div><h3>Bilas dan simpan dengan benar</h3><p>Bilas hingga bersih dan letakkan bar di tempat yang kering.</p></div></div>
+      <div class="timeline-item"><b>RUTIN</b><div><h3>Perhatikan respons rambut</h3><p>Sesuaikan rutinitas dengan kebutuhan rambut. Hentikan penggunaan jika terjadi iritasi.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- COMPARISON -->
-
-<section class="section alt">
+<!-- PERBANDINGAN -->
+<section class="section">
   <div class="container">
-
     <div class="section-head">
-      <p class="eyebrow">Detail produk</p>
-      <h2>Mengenal format shampoo bar</h2>
-      <p>
-        Perbandingan format secara sederhana.
-        Pilihan produk tetap mengikuti kebutuhan masing-masing.
-      </p>
+      <p class="eyebrow">Kenali formatnya</p>
+      <h2>Shampoo bar atau shampoo cair?</h2>
+      <p>Keduanya memiliki format berbeda. Pilih yang paling sesuai dengan kebiasaanmu.</p>
     </div>
-
     <div style="overflow-x:auto">
-      <table class="compare-table">
-        <thead>
-          <tr>
-            <th>Hal yang dibandingkan</th>
-            <th class="ours">Shampoo Bar</th>
-            <th>Shampoo Cair</th>
-          </tr>
-        </thead>
+      <table class="compare">
+        <thead><tr><th>Perbandingan</th><th class="ours">Shampoo Bar</th><th>Shampoo Cair</th></tr></thead>
         <tbody>
-          <tr>
-            <td>Bentuk produk</td>
-            <td class="ours">Padat</td>
-            <td>Cair</td>
-          </tr>
-          <tr>
-            <td>Kemasan utama</td>
-            <td class="ours">Umumnya tanpa botol</td>
-            <td>Botol atau pouch</td>
-          </tr>
-          <tr>
-            <td>Cara aplikasi</td>
-            <td class="ours">Diusap pada rambut/tangan</td>
-            <td>Dituang ke tangan</td>
-          </tr>
-          <tr>
-            <td>Penyimpanan</td>
-            <td class="ours">Perlu tempat kering</td>
-            <td>Tutup kemasan</td>
-          </tr>
+          <tr><td>Bentuk</td><td class="ours">Padat</td><td>Cair</td></tr>
+          <tr><td>Kemasan</td><td class="ours">Format bar</td><td>Botol atau pouch</td></tr>
+          <tr><td>Cara pakai</td><td class="ours">Diusap sesuai petunjuk</td><td>Dituang ke tangan</td></tr>
+          <tr><td>Penyimpanan</td><td class="ours">Tempat kering</td><td>Tutup kemasan</td></tr>
         </tbody>
       </table>
     </div>
-
-  </div>
-</section>
-
-<!-- BEFORE AFTER REFERENCE IMAGES -->
-
-<section class="section">
-  <div class="container">
-
-    <div class="section-head">
-      <p class="eyebrow">Visual referensi</p>
-      <h2>Galeri materi hasil perawatan</h2>
-      <p>
-        Foto berikut merupakan materi dari halaman referensi,
-        bukan dokumentasi pelanggan toko ini.
-      </p>
-    </div>
-
-    <div class="image-wall">
-
-      <figure>
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/hf_20260305_002139_a7dd5799-ea2c-431e-aac9-0830b10124b6.webp?v=1772908268&width=800"
-          alt="Foto hasil perawatan dari materi referensi">
-        <figcaption>Foto hasil dari materi referensi.</figcaption>
-      </figure>
-
-      <figure>
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/hf_20260305_002740_f316d5b0-ba4d-439b-b066-eeed483a0f5c.webp?v=1772908291&width=800"
-          alt="Foto hasil perawatan dari materi referensi">
-        <figcaption>Foto hasil dari materi referensi.</figcaption>
-      </figure>
-
-      <figure>
-        <img loading="lazy"
-          src="https://yoracare.com/cdn/shop/files/hf_20260305_002904_4623e8f6-469c-4f33-a433-ad86a35d3ecb.webp?v=1772908307&width=800"
-          alt="Foto hasil perawatan dari materi referensi">
-        <figcaption>Foto hasil dari materi referensi.</figcaption>
-      </figure>
-
-    </div>
-  </div>
-</section>
-
-<!-- CUSTOMER REVIEWS -->
-
-<section class="section alt" id="ulasan">
-  <div class="container">
-
-    <div class="section-head">
-      <p class="eyebrow">Customer feedback</p>
-      <h2>Ulasan pelanggan</h2>
-      <p>
-        Pengalaman pembeli akan ditampilkan di bagian ini.
-      </p>
-    </div>
-
-    <div class="review-note">
-      Area ulasan ini belum diisi karena belum ada testimoni
-      pelanggan asli yang diberikan. Masukkan ulasan nyata
-      beserta izin penggunaannya sebelum halaman dipublikasikan.
-    </div>
-
-    <div class="review-grid">
-      <article class="review-card">
-        <div class="stars">★★★★★</div>
-        <blockquote>
-          Tempat untuk memasukkan ulasan asli pelanggan.
-        </blockquote>
-        <small>Nama/inisial pembeli</small>
-      </article>
-
-      <article class="review-card">
-        <div class="stars">★★★★★</div>
-        <blockquote>
-          Tempat untuk memasukkan ulasan asli pelanggan.
-        </blockquote>
-        <small>Nama/inisial pembeli</small>
-      </article>
-
-      <article class="review-card">
-        <div class="stars">★★★★★</div>
-        <blockquote>
-          Tempat untuk memasukkan ulasan asli pelanggan.
-        </blockquote>
-        <small>Nama/inisial pembeli</small>
-      </article>
-    </div>
-
   </div>
 </section>
 
 <!-- FAQ -->
-
-<section class="section" id="faq">
+<section class="section alt" id="faq">
   <div class="container">
-
     <div class="section-head">
       <p class="eyebrow">Butuh informasi?</p>
       <h2>Pertanyaan yang sering diajukan</h2>
-      <p>
-        Informasi umum sebelum mencoba Korean Scalp Revival Bar.
-      </p>
+      <p>Informasi singkat sebelum kamu mencoba Korean Scalp Revival Bar.</p>
     </div>
-
     <div class="faq">
-
-      <details>
-        <summary>Bagaimana cara menggunakan shampoo bar?</summary>
-        <p>
-          Basahi rambut, gunakan shampoo bar sesuai petunjuk
-          pada kemasan, pijat lembut kulit kepala, lalu bilas
-          hingga bersih.
-        </p>
-      </details>
-
-      <details>
-        <summary>Apakah bisa digunakan setiap hari?</summary>
-        <p>
-          Frekuensi penggunaan mengikuti petunjuk pada label
-          produk dan kebutuhan rambut masing-masing.
-        </p>
-      </details>
-
-      <details>
-        <summary>Apakah cocok untuk semua jenis rambut?</summary>
-        <p>
-          Kecocokan dapat berbeda pada setiap orang.
-          Periksa daftar bahan dan petunjuk penggunaan
-          sebelum memakai produk.
-        </p>
-      </details>
-
-      <details>
-        <summary>Bagaimana cara menyimpan shampoo bar?</summary>
-        <p>
-          Simpan di tempat kering dan memiliki sirkulasi
-          udara baik setelah digunakan.
-        </p>
-      </details>
-
-      <details>
-        <summary>Bagaimana jika kulit kepala terasa tidak nyaman?</summary>
-        <p>
-          Hentikan pemakaian jika timbul iritasi atau reaksi
-          yang tidak diinginkan.
-        </p>
-      </details>
-
-      <details>
-        <summary>Bagaimana cara memesan?</summary>
-        <p>
-          Klik tombol pesan, isi data penerima pada formulir
-          OrderOnline, periksa kembali detail pesanan,
-          lalu kirim pesanan.
-        </p>
-      </details>
-
+      <details><summary>Apa itu Korean Scalp Revival Bar?</summary><p>Produk shampoo berbentuk bar yang digunakan untuk membersihkan rambut dan kulit kepala sebagai bagian dari rutinitas keramas.</p></details>
+      <details><summary>Bagaimana cara menggunakannya?</summary><p>Basahi rambut, usapkan bar mengikuti petunjuk pada kemasan, pijat kulit kepala dengan lembut, lalu bilas sampai bersih.</p></details>
+      <details><summary>Bagaimana cara menyimpan produk?</summary><p>Setelah digunakan, simpan di tempat kering agar bar tidak terus-menerus terkena genangan air.</p></details>
+      <details><summary>Apakah bisa digunakan setiap hari?</summary><p>Ikuti petunjuk frekuensi pemakaian pada label produk dan sesuaikan dengan kebutuhan rambut masing-masing.</p></details>
+      <details><summary>Apakah cocok untuk semua jenis rambut?</summary><p>Kecocokan produk dapat berbeda pada setiap orang. Periksa komposisi dan petunjuk pada kemasan sebelum digunakan.</p></details>
+      <details><summary>Bagaimana jika muncul rasa tidak nyaman?</summary><p>Hentikan penggunaan jika muncul iritasi atau reaksi yang tidak diinginkan.</p></details>
+      <details><summary>Bagaimana cara memesan?</summary><p>Tekan tombol pesan, isi formulir pemesanan, periksa data penerima, lalu kirim pesanan melalui OrderOnline.</p></details>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-
-<section class="closing" id="pesan">
-  <h2>Mulai rutinitas perawatan rambutmu.</h2>
-  <p>
-    Kenali Korean Scalp Revival Bar dan lanjutkan
-    pemesanan melalui formulir resmi toko.
-  </p>
-  <a class="buy-button" href="#order-form">
-    LANJUT KE PEMESANAN
-  </a>
+<!-- CTA -->
+<section class="closing">
+  <p class="eyebrow" style="color:#d3dfd0">Saatnya mencoba rutinitas baru</p>
+  <h2>Kenali pengalaman keramas dengan format shampoo bar.</h2>
+  <p>Pilih Korean Scalp Revival Bar dan lanjutkan pemesanan melalui formulir online.</p>
+  <a class="buy-button" href="#order-form">PESAN SEKARANG</a>
 </section>
 
-<!-- ORDERONLINE CHECKOUT -->
-
+<!-- ORDERONLINE -->
 <section class="section" id="order-form">
   <div class="container checkout-wrap">
-
     <div class="section-head">
-      <p class="eyebrow">Pemesanan</p>
-      <h2>Lengkapi data pesanan</h2>
-      <p>
-        Periksa kembali produk dan harga sebelum mengirim formulir.
-      </p>
+      <p class="eyebrow">Pemesanan online</p>
+      <h2>Lengkapi detail pesananmu</h2>
+      <p>Pastikan nama, nomor telepon, dan alamat pengiriman sudah benar.</p>
     </div>
-
     <div class="ooef">
-      <form
-        class="orderonline-embed-form"
+      <form class="orderonline-embed-form"
         data-username="mila"
         data-product-slug="korean-scalp-revival-bar"
         data-product-id="6af323be03ce8b098207f98e"
         id="oo-embed-form-korean-scalp-revival-bar-6501"
         data-origin="orderonline">
-
-        <div class="ooef-loader">
-          <div>Loading...</div>
-        </div>
-
+        <div class="ooef-loader"><div>Loading...</div></div>
       </form>
     </div>
-
   </div>
 </section>
-
 </main>
 
 <footer class="footer">
-  Korean Scalp Revival Bar
-  <br>
-  © <span id="year"></span>
+  Korean Scalp Revival Bar · Periksa petunjuk dan komposisi pada kemasan sebelum penggunaan.
+  <br>© <span id="year"></span>
 </footer>
 
-<!-- MOBILE STICKY CTA -->
-
-<div class="sticky">
-  <div class="sticky-inner">
-    <div class="sticky-price">
-      Rp155.900
-      <small>Rp349.000</small>
-    </div>
-
+<div class="mobile-bar">
+  <div class="mobile-inner">
+    <div class="mobile-price">Rp155.900<small>Rp349.000</small></div>
     <a href="#order-form">Pesan Sekarang</a>
   </div>
 </div>
 
-<!-- JAVASCRIPT -->
-
 <script>
-/* PRODUCT GALLERY */
+/* GALERI: KLIK THUMBNAIL, PANAH, DAN SWIPE */
+(function(){
+  const images=[
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img9.webp?v=1791883706&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img1.webp?v=1791883707&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img2.webp?v=1791883706&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img3.webp?v=1791883706&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img4.jpg?v=1791883707&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img5.webp?v=1791883707&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img6.webp?v=1791883707&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img7.webp?v=1791883706&width=1200",
+    "https://yoracare.com/cdn/shop/files/yoracare-OG-img8.webp?v=1791883706&width=1200"
+  ];
+  const main=document.getElementById("mainImage");
+  const count=document.getElementById("galleryCount");
+  const thumbs=[...document.querySelectorAll(".thumb")];
+  const track=document.getElementById("thumbTrack");
+  let current=0,startX=0;
 
-document.querySelectorAll(".thumb").forEach(function(button) {
-  button.addEventListener("click", function() {
+  function show(index){
+    current=(index+images.length)%images.length;
+    main.src=images[current];
+    count.textContent=(current+1)+" / "+images.length;
+    thumbs.forEach((b,i)=>b.classList.toggle("active",i===current));
+    thumbs[current].scrollIntoView({behavior:"smooth",block:"nearest",inline:"nearest"});
+  }
+  thumbs.forEach((button,i)=>button.addEventListener("click",()=>show(i)));
+  document.querySelector(".gallery-arrow.prev").addEventListener("click",()=>show(current-1));
+  document.querySelector(".gallery-arrow.next").addEventListener("click",()=>show(current+1));
 
-    var image = document.getElementById("mainProductImage");
+  main.addEventListener("touchstart",e=>{startX=e.changedTouches[0].screenX},{passive:true});
+  main.addEventListener("touchend",e=>{
+    const delta=e.changedTouches[0].screenX-startX;
+    if(Math.abs(delta)>45)show(current+(delta<0?1:-1));
+  },{passive:true});
+})();
 
-    image.src = button.dataset.image;
-
-    document.querySelectorAll(".thumb").forEach(function(item) {
-      item.classList.remove("active");
-    });
-
-    button.classList.add("active");
-  });
-});
-
-/* FOOTER YEAR */
-
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+document.getElementById("year").textContent=new Date().getFullYear();
 
 /* ORDERONLINE EMBED */
-
-if (typeof xLogError !== "function") {
-  var xLogError = function(error) {
-    var req = new XMLHttpRequest();
-
-    var payload = JSON.stringify({
-      url: document.location.href,
-      line: error.line,
-      stack: error.stack
+if(typeof xLogError!=="function"){
+  var xLogError=function(error){
+    var req=new XMLHttpRequest();
+    var payload=JSON.stringify({
+      url:document.location.href,
+      line:error.line,
+      stack:error.stack
     });
-
-    req.open("POST", "https://api.orderonline.id/log", true);
-
-    req.setRequestHeader(
-      "Content-type",
-      "application/x-www-form-urlencoded"
-    );
-
-    req.send(
-      "message=" + encodeURIComponent(error.name) +
-      "&payload=" + encodeURIComponent(payload) +
-      "&type=embed&level=error"
-    );
+    req.open("POST","https://api.orderonline.id/log",true);
+    req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    req.send("message="+encodeURIComponent(error.name)+"&payload="+encodeURIComponent(payload)+"&type=embed&level=error");
   };
 }
-
-try {
-
-  if (typeof xEmbedScript !== "function") {
-
-    var xEmbedScript = function() {
-
-      if (document.getElementById("oo-embed-js")) return;
-
-      var script = document.createElement("script");
-
-      script.async = true;
-
-      script.src =
-        "https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2";
-
-      script.id = "oo-embed-js";
-
-      document.head.appendChild(script);
+try{
+  if(typeof xEmbedScript!=="function"){
+    var xEmbedScript=function(){
+      if(document.getElementById("oo-embed-js"))return;
+      var t=document.createElement("script");
+      t.async=true;
+      t.src="https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2";
+      t.id="oo-embed-js";
+      document.head.appendChild(t);
     };
   }
-
-  if (typeof xEmbedInit !== "function") {
-
-    var xEmbedInit = function(w) {
-
-      if (w.ooe) return;
-
-      var n = w.ooe = function() {
-
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-
+  if(typeof xEmbedInit!=="function"){
+    var xEmbedInit=function(w){
+      if(w.ooe)return;
+      var n=w.ooe=function(){
+        n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments);
       };
-
-      if (!w._ooe) w._ooe = n;
-
-      n.push = n;
-      n.loaded = true;
-      n.version = "8.0.2";
-      n.queue = [];
+      if(!w._ooe)w._ooe=n;
+      n.push=n;n.loaded=true;n.version="8.0.2";n.queue=[];
     };
   }
-
   xEmbedInit(window);
-
-  ooe(
-    "setup",
-    "redirect",
-    "https://mila.orderonline.id"
-  );
-
-  ooe(
-    "init",
-    "5f1a7b8fa9bf807da24d83bb",
+  ooe("setup","redirect","https://mila.orderonline.id");
+  ooe("init","5f1a7b8fa9bf807da24d83bb",
     "6af323be03ce8b098207f98e",
     "6af323be03ce8b098207f98f",
     "oo-embed-form-korean-scalp-revival-bar-6501",
@@ -1799,34 +702,19 @@ try {
       triggerGtm:false
     }
   );
-
-  if (!window.jQuery) {
-
-    var jquery = document.createElement("script");
-
-    jquery.async = true;
-
-    jquery.src =
-      "https://cdn.orderonline.id/js/vendor/jquery.min.js";
-
-    jquery.onload = xEmbedScript;
-
-    document.head.appendChild(jquery);
-
-  } else {
-
+  if(!window.jQuery){
+    var jq=document.createElement("script");
+    jq.async=true;
+    jq.src="https://cdn.orderonline.id/js/vendor/jquery.min.js";
+    jq.onload=xEmbedScript;
+    document.head.appendChild(jq);
+  }else{
     xEmbedScript();
-
   }
-
-} catch(error) {
-
+}catch(error){
   xLogError(error);
-
   throw error;
-
 }
 </script>
-
 </body>
 </html>
